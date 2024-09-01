@@ -1,0 +1,17 @@
+.alphabet-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 10px;
+  text-align: center;
+}
+
+.letter {
+  font-size: 3.5rem;
+  padding: 20px;
+  background-color: #ffebcd;
+  border-radius: 8px;
+}
+.letter:hover {
+  cursor: pointer;
+  color: #007bff;
+}

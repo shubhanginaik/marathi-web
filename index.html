@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marathi for Kids</title>
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="" id="dynamic-css" />
+  </head>
+  <body>
+    <header>
+      <nav class="top-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Language Options</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="#" onclick="loadContent('alphabet', this)" class="alphabet"
+              >Marathi Alphabet</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="loadContent('numbers', this)" class="numbers"
+              >Numbers</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="loadContent('words', this)" class="words"
+              >Basic Words</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="loadContent('phrases', this)" class="phrases"
+              >Common Phrases</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="loadContent('sentences', this)"
+              class="sentences"
+              >Simple Sentences</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main class="content">
+        <!-- Content will be loaded here dynamically -->
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

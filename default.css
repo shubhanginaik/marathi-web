@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu {
+  background-color: #f8b400;
+  padding: 10px;
+}
+
+.top-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-menu li {
+  display: inline;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #ffc107;
+  padding: 15px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 10px 0;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+}
+.sidebar a.active {
+  color: rgb(138, 138, 220);
+}
