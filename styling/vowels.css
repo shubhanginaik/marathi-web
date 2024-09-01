@@ -1,4 +1,4 @@
-.alphabet-container {
+.vowels-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 10px;

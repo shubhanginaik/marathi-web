@@ -2,29 +2,34 @@ function loadContent(topic, element) {
   let content = "";
   let cssFile = "";
   switch (topic) {
-    case "alphabet":
+    case "vowels":
       content = `
-      <h2>Marathi Alphabet (मराठी अक्षरे)</h2>
-      <div class="alphabet-container">
+      <h2>Marathi vowels (मराठी स्वर)</h2>
+      <div class="vowels-container">
           <div class="letter" data-sound="a">अ</div>
-          <div class="letter">आ</div>
-          <div class="letter">इ</div>
-          <div class="letter">ई</div>
-          <div class="letter">उ</div>
-          <div class="letter">ऊ</div>
-          <div class="letter">ए</div>
-          <div class="letter">ऐ</div>
-          <div class="letter">ओ</div>
-          <div class="letter">औ</div>
-          <div class="letter">अं</div>
-          <div class="letter">अः</div>
+          <div class="letter" data-sound="aa">आ</div>
+          <div class="letter" data-sound="i">इ</div>
+          <div class="letter"  data-sound="ii">ई</div>
+          <div class="letter"  data-sound="u">उ</div>
+          <div class="letter"  data-sound="uu">ऊ</div>
+          <div class="letter"  data-sound="e">ए</div>
+          <div class="letter"  data-sound="ai">ऐ</div>
+          <div class="letter"  data-sound="o">ओ</div>
+          <div class="letter"  data-sound="au">औ</div>
+          <div class="letter"  data-sound="am">अं</div>
+          <div class="letter"  data-sound="ah">अः</div>
       </div>
       <audio id="audio" preload="auto">
       <source id="audioSource" src="" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
   `;
-      cssFile = "styling/alphabet.css";
+      cssFile = "styling/vowels.css";
+      break;
+    case "consonants":
+      content =
+        "<h2>Consonants in Marathi</h2><p> Learn Marathi consonants...</p>";
+      cssFile = "consonants.css";
       break;
     case "numbers":
       content =
